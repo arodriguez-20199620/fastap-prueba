@@ -1,0 +1,36 @@
+/** @type {import('tailwindcss').Config} */
+import scrollbar from "tailwind-scrollbar";
+
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'picton-blue': '#48AAE7',
+        'cornflower-blue': '#A6D3EA',
+        'cyber-yellow': '#FDD300',
+        'han-purple': '#491DEF',
+        customBlue: '#48AAE7',
+        customWhite: '#FFFFFF',
+        customLightBlue: '#A6D3EA',
+        customDarkGray: '#333333',
+      },
+      backgroundImage: {
+        'gym': "url('./src/assets/images/gymsection.jpg')",
+        'cases': "url('./src/assets/images/casessection.jpg')",
+        'jewelry': "url('./src/assets/images/jewelsection.jpg')",
+        'cases-gallery': "url('./src/assets/images/cases.jpg')",
+
+      },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'], // Fuente Poppins para un estilo juvenil     
+      },
+    },
+  },
+  plugins: [
+    scrollbar
+  ],
+};
