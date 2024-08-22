@@ -1,7 +1,8 @@
 import { CiMenuBurger as MenuIcon } from "react-icons/ci";
 import { IoMdClose as CloseIcon } from "react-icons/io";
 import { FaTimes as CloseIconV2 } from "react-icons/fa";
-import { FaYoutube as YoutubeIcon, FaInstagram as InstagramIcon, FaLinkedin as LinkedinIcon, FaTwitter as TwitterIcon } from 'react-icons/fa';
+import { FaYoutube as YoutubeIcon } from 'react-icons/fa';
+import { RiFacebookBoxFill as FacebookIcon, RiInstagramFill as InstagramIcon, RiWhatsappFill as WhatsAppIcon } from "react-icons/ri";
 
 export {
     CloseIcon,
@@ -9,6 +10,6 @@ export {
     MenuIcon,
     YoutubeIcon,
     InstagramIcon,
-    LinkedinIcon,
-    TwitterIcon,
+    FacebookIcon,
+    WhatsAppIcon
 };

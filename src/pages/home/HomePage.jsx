@@ -1,13 +1,15 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 import { GymSection, CasesSection, JewelSection, GallerySection } from './components';
-import { NavbarV2, Footer } from '../../components/layout';
+import { Navbar, Footer } from '../../components/layout';
+import useDocumentTitle from '../../utils/useDocumentTitle';
 
+const HomePage = () => {
+    useDocumentTitle("FasTap | Todo al alcance de un Tap ");
 
-const Home = () => {
     return (
         <>
-            <NavbarV2 />
+            <Navbar />
             <LazyLoad height={200} offset={100}>
                 <GallerySection />
             </LazyLoad>
@@ -29,4 +31,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default HomePage;

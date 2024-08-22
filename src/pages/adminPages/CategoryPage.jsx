@@ -1,6 +1,6 @@
 import { Input, } from '../../components/common/index.js';
 import { ImageUpload } from '../../components/layout/index.js';
-import { Navbar} from '../../components/layout/index.js';
+import { Navbar } from '../../components/layout/index.js';
 import React, { useState } from 'react';
 const CategoryPage = () => {
 
@@ -20,7 +20,7 @@ const CategoryPage = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
+
         console.log(formData);
     };
 

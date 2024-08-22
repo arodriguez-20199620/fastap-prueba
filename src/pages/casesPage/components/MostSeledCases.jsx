@@ -3,7 +3,7 @@ import { ProductCard1 } from "../../../components/common/index.js";
 
 const Placeholder = () => (
     <div style={{ height: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f0f0f0' }}>
-      Cargando comentarios...
+      Cargando...
     </div>
   );
 
@@ -12,8 +12,8 @@ export const MostSeledCases = () => {
         <>
             <div className="relative bg-gradient-to-b from-[#fff] to-[#fff] py-16 px-4 sm:px-6 lg:px-8">
                 {/* Fondo de la sección */}
-                <div className="absolute inset-0 bg-blue-100 opacity-30 z-0"></div>
-                <div className="relative z-10 max-w-screen-xl mx-auto">
+                <div className="absolute inset-0 bg-blue-100 opacity-30"></div>
+                <div className="relative max-w-screen-xl mx-auto">
                     <h1 className="font-poppins text-3xl font-bold text-gray-900 text-center mb-12">
                         Lo más Vendido
                     </h1>

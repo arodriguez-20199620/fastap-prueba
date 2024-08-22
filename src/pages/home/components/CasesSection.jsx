@@ -1,9 +1,8 @@
-import LazyLoad from 'react-lazyload';
 import Carousel from '../../../components/layout/Carousel';
 
 export const CasesSection = () => {
     return (
-        <LazyLoad height={200} offset={100}>
+        <>
             <section id='cases' className="h-96 text-white text-center grid bg-cover bg-cases">
                 <div className="col-start-1 row-start-1 bg-black bg-opacity-50 w-full h-full"></div>
                 <div className="col-start-1 row-start-1 max-w-4xl mx-auto my-auto">
@@ -25,6 +24,6 @@ export const CasesSection = () => {
                 <Carousel />
             </div>
             
-        </LazyLoad>
+        </>
     );
 }

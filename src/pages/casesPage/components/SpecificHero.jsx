@@ -11,7 +11,7 @@ export const SpecificHero = () => {
 
                 <div className="absolute inset-0 bg-black opacity-50"></div>
 
-                <div className="relative z-10 flex items-center justify-center">
+                <div className="relative flex items-center justify-center">
                     <LazyLoadImage
                         src="https://i.ibb.co/YNMJqh5/Mesa-de-trabajo-1-Fas-Tap-LOGO-Original-PNG.png"
                         alt="hero"

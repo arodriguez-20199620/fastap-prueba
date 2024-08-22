@@ -35,7 +35,7 @@ export const Modal = ({ isOpen, onClose, title, description, children, maxWidth 
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <DialogPanel className={`relative ${maxWidth} z-50 transform overflow-hidden rounded-xl bg-white text-left align-middle shadow-xl transition-all`}>
+              <DialogPanel className={`relative ${maxWidth} z-50 transform overflow-hidden rounded-xl bg-white text-left align-middle shadow-xl transition-all mx-2`}>
                 <button onClick={onClose} className="absolute top-3 right-3 text-gray-500 hover:text-gray-700">
                   <CloseIconV2 size={20} />
                 </button>

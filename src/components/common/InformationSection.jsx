@@ -30,7 +30,7 @@ export const InformationSection = ({ srcImg, desc, txt1, txt2 }) => {
                 className={`absolute inset-0 -z-10 transition-opacity duration-1000 ${gradientOpacity} bg-gradient-to-r from-gray-100 via-white to-gray-100`}
             ></div>
 
-            <div className="max-w-screen-lg mx-auto flex flex-col-reverse lg:flex-row items-center gap-8 relative z-10">
+            <div className="max-w-screen-lg mx-auto flex flex-col-reverse lg:flex-row items-center gap-8 relative ">
                 <div className="flex-shrink-0 w-full lg:w-1/2">
                     <LazyLoadImage
                         src={srcImg}

@@ -1,10 +1,19 @@
 import React from 'react';
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { placeHolder } from '../../assets/images';
 
 export const Card = () => {
+
     return (
         <div className="rounded-md overflow-visible border">
-            <img className="w-full h-64 object-cover" src="https://i.ibb.co/gJBD1zS/Card-Prueba-4.jpg" alt="Product Image" />
+            <LazyLoadImage
+                placeholderSrc={placeHolder}
+                onLoad={() => console.log("carga")}
+                className="w-full h-64 object-cover rounded-t-md"
+                src="https://i.ibb.co/gJBD1zS/Card-Prueba-4.jpg"
+                alt="Product Image"
+                wrapperClassName='w-full h-64 object-cover rounded-t-md'
+            />
             <div className="p-4">
                 <h3 className="text-lg font-medium mb-2">Product Title</h3>
                 <p className="text-gray-600 text-sm mb-4">

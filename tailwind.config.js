@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      height: {
+        '128': '32rem',
+      },
       colors: {
         'picton-blue': '#48AAE7',
         'cornflower-blue': '#A6D3EA',

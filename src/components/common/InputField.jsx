@@ -1,6 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-export const InputField = ({ colorLabel, text, id, type, placeholder = '', value }) => {
+export const InputField = ({ 
+  colorLabel, 
+  text, 
+  id, 
+  type, 
+  placeholder = '', 
+  value, 
+  register, 
+  name, 
+  errors, 
+  validation 
+}) => {
   return (
     <>
       <label
@@ -14,8 +25,14 @@ export const InputField = ({ colorLabel, text, id, type, placeholder = '', value
         placeholder={placeholder}
         defaultValue={value}
         id={id}
-        className="border rounded-lg px-3 py-2 text-sm w-full outline-none "
+        className={`border rounded-lg px-3 py-2 text-sm w-full outline-none ${errors[name] ? 'border-red-500' : ''}`}
+        {...(register && register(name, validation))}
       />
+      {errors[name] && (
+        <span className="text-red-500 text-xs mt-1">
+          {errors[name].message}
+        </span>
+      )}
     </>
-  )
-}
+  );
+};

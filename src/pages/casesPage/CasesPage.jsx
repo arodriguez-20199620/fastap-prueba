@@ -2,11 +2,12 @@ import React from "react";
 import { SpecificHero, MostSeledCases } from "./components";
 import { InformationSection } from "../../components/common";
 import { ProductCatalog } from "../../components/layout/ProductCatalog";
-
+import { Navbar, Footer } from "../../components/layout";
 
 const CasesPage = () => {
     return (
         <>
+            <NavbarV2 />
             <SpecificHero />
             {/*Carrusel Option 1*/}
             <MostSeledCases />
@@ -18,6 +19,7 @@ const CasesPage = () => {
                 txt2={"Disponibles en una variedad de colores y diseños, nuestros cases se ajustan perfectamente a cada modelo de iPhone, asegurando un ajuste perfecto y un acceso fácil a todos los botones y puertos."}
             />
             <ProductCatalog />
+            <Footer />
         </>
     )
 }

@@ -1,11 +1,12 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { iconV2 } from '../../assets/images/';
-import { CloseIcon } from '../icons';
+import { iconV2 } from '../../../assets/images';
+import { CloseIcon } from '../../icons';
 
-export const Sidebar = ({ isSidebarOpen, toggleSidebar, openModal }) => {
+export const Sidebar = ({ isSidebarOpen, toggleSidebar, openModal, sidebarRef }) => {
     return (
         <div className={`fixed inset-0 z-20 transition-opacity duration-300 ${isSidebarOpen ? 'bg-black bg-opacity-50 opacity-100' : 'opacity-0 pointer-events-none'}`} onClick={toggleSidebar}>
-            <div className={`fixed left-0 top-0 h-full w-72 bg-white shadow-lg transform transition-transform duration-300 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+            <div ref={sidebarRef} className={`fixed left-0 top-0 h-full w-72 bg-white shadow-lg transform transition-transform duration-300 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
                 <div className="flex items-center justify-between p-4 border-b border-gray-200">
                     <Link to="/" className="cursor-pointer py-1.5">
                         <img src={iconV2} className='h-12' alt="Logo" />
