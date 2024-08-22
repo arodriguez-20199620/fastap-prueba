@@ -21,12 +21,12 @@ export default {
         customLightBlue: '#A6D3EA',
         customDarkGray: '#333333',
       },
-          backgroundImage: {
-        'gym': "url('./assets/images/gymsection.jpg')",
-        'cases': "url('./assets/images/casessection.jpg')",
-        'jewelry': "url('./assets/images/jewelsection.jpg')",
-        'cases-gallery': "url('./assets/images/cases.jpg')",
-    },
+      backgroundImage: {
+        'gym': "url('/assets/images/gymsection.jpg')",
+        'cases': "url('/assets/images/casessection.jpg')",
+        'jewelry': "url('/assets/images/jewelsection.jpg')",
+        'cases-gallery': "url('/assets/images/cases.jpg')",
+      },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'], // Fuente Poppins para un estilo juvenil     
       },
